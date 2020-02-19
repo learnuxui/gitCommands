@@ -1,0 +1,243 @@
+[
+  {
+    "id": "General",
+    "commands": [
+      {
+        "id": "init",
+        "desc": "Initialize a local Git repository",
+        "command": "git init",
+        "ex": "git init demo_repository"
+      },
+      {
+        "id": "gitclone",
+        "desc": "Create a copy of repository on local machine",
+        "command": "git clone",
+        "ex": "git clone https://github.com/learnuxui/gitCheetSheet.git"
+      },
+      {
+        "id": "git status",
+        "desc": "Gives the status of working repository, modification new files added , commit etc...",
+        "command": "git status",
+        "ex": "git status"
+      },
+      {
+        "id": "git add",
+        "desc": "Gives the status of working repository, modification new files added , commit etc...",
+        "command": "git add <FILES>",
+        "ex": "git add index.html add index.html file only and git add -A this will add all the files to staging area."
+      },
+      {
+        "id": "git commit",
+        "desc": "Commit all the staged changes files",
+        "command": "git commit -m <MESSAGE>, git commit -a",
+        "ex": "git commit -m Commit Message, this will commit all the stages changes and git commit -a will commit all local chnages in tracked file"
+      },
+      {
+        "id": "git diff",
+        "desc": "Before commit if you want to check the difference in current file and repository file.",
+        "command": "git diff, git diff <File_NAME>",
+        "ex": "git diff will show all the files which has been changed and git diff testA.html will show changes for testA.html file only"
+      },
+      {
+        "id": "git push",
+        "desc": "Push all the local branch changes [commits] to tracked remote branch",
+        "command": "git push",
+        "ex": "git push"
+      },
+      {
+        "id": "git revert",
+        "desc": "Revert committed changes from repository ",
+        "command": "git revert",
+        "ex": "git revert <Commit-Hash> for commit has use git log"
+      },
+      {
+        "id": "git log",
+        "desc": "Details about each commit",
+        "command": "git log",
+        "ex": "git log"
+      }
+    ]
+  },
+  {
+    "id": "Branching",
+    "commands": [
+      {
+        "id": "newBranch",
+        "desc": "Create new branch from Master branch",
+        "command": "git checkout -b <NEW_BRANCH_NAME>",
+        "ex": "git checkout -b TEST_BRANCH"
+      },
+      {
+        "id": "branchFromSpecificRemote",
+        "desc": "Creates a new branch from provided remote branch",
+        "command": "git checkout -b <NEW_BRANCH_NAME> <REMOTE_BRANCH>",
+        "ex": "git checkout -b TEST_BRANCH origin/featureA"
+      },
+      {
+        "id": "branchTagging",
+        "desc": "A tag is like a branch that doesn't change. Unlike branches, tags, after being created, have no further history of commits.Tagging is generally used to capture a point in history that is used for a marked version release.",
+        "command": "git tag -a <VERSION> -m \"TAG_MESSAGE\"",
+        "ex": "git tag -a v1.0 -m \"First Release\"\ngit push"
+      },
+      {
+        "id": "git branch",
+        "desc": "List all the branch in the local repository and active bbranch is maked as * ",
+        "command": "git branch",
+        "ex": "git branch"
+      },
+      {
+        "id": "gitRemoteURL",
+        "desc": "Shows the remote url of the branch",
+        "command": "git remote -v",
+        "ex": "git remote -v"
+      },
+      {
+        "id": "deleteBranch",
+        "desc": "Delete Branch",
+        "command": "git branch -D <Branch_Name>",
+        "ex": "git branch -D test"
+      },
+      {
+        "id": "listAllRemoteBranches",
+        "desc": "Fetch all the remote branches",
+        "command": "git fetch --all, git branch -a",
+        "ex": "git branch -a list all the remote branches"
+      },
+      {
+        "id": "renameBranch",
+        "desc": "Rename branch",
+        "command": "git branch -m <New_Name>",
+        "ex": "git branch -m TEST , while working in same branch\ngit branch -m <old name> <new name> while working from outside the branch"
+      }
+    ]
+  },
+  {
+    "id": "Configure",
+    "commands": [
+      {
+        "id": "nameAndEmail",
+        "desc": "Persist email and git username. These details are used while making any commits.",
+        "command": "git config --global user.name <USERNAME> \n git config --global user.email <EMAIL> ",
+        "ex": "git config --global user.name VAIBHAV "
+      },
+      {
+        "id": "editor",
+        "desc": "Set default editor.",
+        "command": "git config --global core.editor <EDITOR>",
+        "ex": "git config --global core.editor \"nano|vim|notepad\""
+      }
+    ]
+  },
+  {
+    "id": "Merge and Rebase",
+    "commands": [
+      {
+        "id": "branch in branch",
+        "desc": "Another branch in current branch",
+        "command": "git merge <Branch_Name>",
+        "ex": "git merge master"
+      },
+      {
+        "id": "singleFile",
+        "desc": "Single file from different branch to current branch",
+        "command": "git checkout <Branch_Name> <FILE> --patch",
+        "ex": "git checkout master index.html --patch"
+      },
+      {
+        "id": "rebaseorigin",
+        "desc": "Rebase another branch into working branch",
+        "command": "git pull --rebase <Branch_Name>",
+        "ex": "git pull --rebase master"
+      },
+      {
+        "id": "rebaseorigin",
+        "desc": "Rebase origin branch into working branch",
+        "command": "git pull --rebase orgin <Branch_Name>",
+        "ex": "git pull --rebase origin test"
+      },
+      {
+        "id": "rebase continue",
+        "desc": "While merging conflicts may occour post those confilcts get resolve use rebase continue",
+        "command": "git rebase --continue",
+        "ex": "git rebase --continue"
+      },
+      {
+        "id": "squash",
+        "desc": "Replace N with the number of commits you want to squash and <message> with your commit message.",
+        "command": "git reset --soft HEAD~N",
+        "ex": "git reset --soft HEAD~N \n git commit add .\ngit commit -m <message>"
+      },
+      {
+        "id": "git reset",
+        "desc": "Revert the remote commit and move head to a specified location.",
+        "command": "git reset",
+        "ex": "git reset --hard , revert last commit\ngit reset --hard <repo>/<branch> reset branch with specified branch"
+      }
+    ]
+  },
+  {
+    "id": "Handy",
+    "commands": [
+      {
+        "id": "gitStash",
+        "desc": "Persist the local uncommitted changes",
+        "command": "git stash",
+        "ex": "git stash"
+      },
+      {
+        "id": "gitStashList",
+        "desc": "List all the available stash",
+        "command": "git stash list",
+        "ex": "git stash list"
+      },
+      {
+        "id": "gitStashPop",
+        "desc": "Apply latest stash on the branch",
+        "command": "git stash pop",
+        "ex": "git stash pop"
+      },
+      {
+        "id": "gitStashClear",
+        "desc": "Delete the stash",
+        "command": "git stash clear",
+        "ex": "git stash clear"
+      },
+      {
+        "id": "gitStashPopStash",
+        "desc": "Apply specific stash on the branch",
+        "command": "git stash apply [index from stash list]",
+        "ex": "git stash apply 1"
+      },
+      {
+        "id": "deleteFiles",
+        "desc": "Remove untracked files",
+        "command": "git clean -<options>",
+        "ex": "git clean -f, other options are -i for interactive command \n-n to preview what will be removed\n-f to remove forcefully\n-d to remove directories\n-X to remove ignored files\n-x to remove ignored and non-ignored files"
+      },
+      {
+        "id": "ignore",
+        "desc": "Ignore the file / directory from git. Create a .gitignore file in root folder of repository and add the directory name / pattern, whose files need to be ignored",
+        "command": "git stash apply [index from stash list]",
+        "ex": "entries in gitignore file *.exe, dist/* "
+      },
+      {
+        "id": "git commit --amend",
+        "desc": "Modify the last commit message",
+        "command": "git commit --amend",
+        "ex": "git commit --amend "
+      },
+      {
+        "id": "git commit --amend--",
+        "desc": "Modify the last commit , add remove files but keep commit as it is.",
+        "command": "git commit --amend",
+        "ex": "git add . \ngit commit --amend --no-edit"
+      },
+      {
+        "id": "renameFIle",
+        "desc": "Rename file",
+        "command": "git mv <OLD_FILE_NAME> <NEW_FILE_NAME>",
+        "ex": "git mv root.html index.html"
+      }
+    ]
+  }
+]
