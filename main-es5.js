@@ -90,7 +90,7 @@ var AppComponent = /** @class */ (function () {
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.http.get("/assets/data.json")._subscribe;
+        //this.http.get<any[]>("/gitCommands/assets/data.json")._subscribe
         this.getData()
             .then(function (data) { return _this.data = data; }, function (err) { return console.log("error occured", err); });
     };

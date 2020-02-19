@@ -89,7 +89,7 @@ let AppComponent = class AppComponent {
         this.data = [];
     }
     ngOnInit() {
-        this.http.get("/assets/data.json")._subscribe;
+        //this.http.get<any[]>("/gitCommands/assets/data.json")._subscribe
         this.getData()
             .then((data) => this.data = data, (err) => console.log("error occured", err));
     }
