@@ -94,7 +94,7 @@ let AppComponent = class AppComponent {
             .then((data) => this.data = data, (err) => console.log("error occured", err));
     }
     getData() {
-        return this.http.get("/assets/data.json").toPromise();
+        return this.http.get("https://learnuxui.github.io/gitCommands/assets/data.json").toPromise();
     }
 };
 AppComponent.ctorParameters = () => [
