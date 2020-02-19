@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div class=\"header\">\n  <div class=\"frame\">\n   <a href=\"#\"> <img class=\"hImg\" src=\"assets/g-32.png\"> </a>\n  </div>\n  <!-- <div class=\"frame\">\n    <img class=\"hImg\" src=\"assets/l.png\">\n  </div> -->\n\n  <div class=\"center\">\n    GIT-COMMANDS\n  </div>\n  </div>\n  <div style=\"height: 10px;;\"></div>\n  <div style=\"width: 98%;\">\n    <app-row *ngFor=\"let d of data\" [data]=\"d\" style=\"padding-bottom:10px;margin-bottom: 10px;\">\n    </app-row>\n  </div>\n  \n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div class=\"header\">\n  <div class=\"frame\">\n   <a href=\"https://github.com/learnuxui/gitCommands\"> <img class=\"hImg\" src=\"assets/g-32.png\"> </a>\n  </div>\n  <!-- <div class=\"frame\">\n    <img class=\"hImg\" src=\"assets/l.png\">\n  </div> -->\n\n  <div class=\"center\">\n    GIT-COMMANDS\n  </div>\n  </div>\n  <div style=\"height: 10px;;\"></div>\n  <div style=\"width: 98%;\">\n    <app-row *ngFor=\"let d of data\" [data]=\"d\" style=\"padding-bottom:10px;margin-bottom: 10px;\">\n    </app-row>\n  </div>\n  \n"
 
 /***/ }),
 
@@ -63,7 +63,7 @@ module.exports = "<div style=\"width: 100%;\">\n<div style=\"padding: 15px;font-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -170,7 +170,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbW1hbmRzL2NvbW1hbmRzLmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb21tYW5kcy9jb21tYW5kcy5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -217,7 +217,7 @@ var CommandsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jvdy9yb3cuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJyb3cvcm93LmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
